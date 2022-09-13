@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --bg-color: #EDECED;
+  --red: #D81820;
+  --border: #BABABA;
+
+  --dark-bg-color:  #272727;
+  --dark-red: #a11217;
+  --dark-card-bg: #595959;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  color: black;
+  background-color: var(--bg-color);
+  transition: background-color 333ms ease-in-out;
+  line-height: 1;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.dark {
+  background-color: var(--dark-bg-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: -0.025em;
+  margin: 0 auto;
+  padding: 0 2em; 
+}
+
+main {
+  margin-top: 49px;
+  padding: 2em 0;
+}
+
+@media (max-width: 767px) {
+  main {
+    margin-top: 70px;
+  }
+}
